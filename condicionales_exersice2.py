@@ -1,4 +1,4 @@
-from ssl import ALERT_DESCRIPTION_DECOMPRESSION_FAILURE
+
 
 
 user = "andres"
@@ -11,4 +11,5 @@ if userquestion == user:
         print("Welcome to the website")
 else:
     print("Access denied")
-
+#el proximo reto es hacer como el docente que lo que hacia era poner esto en un bucle 
+# de tal manera que hasta que no estuviera bien se volvia a repetir

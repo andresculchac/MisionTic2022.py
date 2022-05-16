@@ -12,20 +12,21 @@ sumatoria_para_nestor = 0
 # pero tambien como un contador que diga que si tiene un punto se imprima otro punto pero no se como dibujarlo
 # tambien esta hallar el problema del jurado y dependiendo de el numero de sus letras hacer el programa 
 
-
-for letras in cadena_jurado:
-    if cadena_jurado[0] in cadena_pedro:
-        print("punto para pedro J")
-        sumatoria_para_pedro += 1
-        break
-    
-    elif cadena_jurado[0] in cadena_nestor:
-        print("punto para nestor K")
-        sumatoria_para_nestor += 1
-        break
-    
-else:
-    print("L")
+def primeraletra ():
+    for letras in cadena_jurado:
+        if cadena_jurado[0] in cadena_pedro:
+            print("punto para pedro J")
+            sumatoria_para_pedro += 1
+            break
+        
+        elif cadena_jurado[0] in cadena_nestor:
+            print("punto para nestor K")
+            sumatoria_para_nestor += 1
+            break        
+    else:
+        print("L")
+        
+primeraletra()
 
 for letras in cadena_jurado:   
     if cadena_jurado[1] in cadena_pedro[1]:

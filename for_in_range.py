@@ -8,3 +8,4 @@ for date in range(5):
 # contar numeros de 1 a 20
 for number in range (21):
     print(number)
+# vemos funciones .split, y ahora replace 

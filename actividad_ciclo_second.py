@@ -14,29 +14,28 @@ print(ensayo)
 # pero tambien como un contador que diga que si tiene un punto se imprima otro punto pero no se como dibujarlo
 # tambien esta hallar el problema del jurado y dependiendo de el numero de sus letras hacer el programa 
 
-def primeraletra ():
-    for letras in cadena_jurado:
-        if cadena_jurado[0] in cadena_pedro:
-            print("punto para pedro J")
-            sumatoria_para_pedro += 1
-            break
+
+for letras in cadena_jurado:
+    if cadena_jurado[0] in cadena_pedro:
+        print("punto para pedro J")
+        sumatoria_para_pedro += 1
+        break
         
-        elif cadena_jurado[0] in cadena_nestor:
-            print("punto para nestor K")
-            sumatoria_para_nestor += 1
-            break        
+    elif cadena_jurado[0] in cadena_nestor:
+        print("punto para nestor K")
+        sumatoria_para_nestor += 1
+        break        
     else:
         print("L")
 
-primeraletra()
 
-def len_resto_de_las_letras(posiciones):
+def len_resto_de_las_letras():
     for letras in cadena_jurado:   
-        if cadena_jurado[posiciones] in cadena_pedro[posiciones]:
-            print("punto para pedro vale huevo porque maldita sea  ")
-            sumatoria_para_pedro + 2
+        if cadena_jurado[1] in cadena_pedro[1]:
+            print("punto para pedro J")
+            sumatoria_para_pedro +  2
             break 
-        elif cadena_jurado[posiciones] in cadena_nestor[posiciones]:
+        elif cadena_jurado[1] in cadena_nestor[1]:
             print("punto para nestor ")
             sumatoria_para_nestor + 2
             break

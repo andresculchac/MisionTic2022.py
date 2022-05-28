@@ -1,9 +1,19 @@
 # vamos a hacer una demostracion y un pequeño avance en cuestiones de 
 # el el reto tres de mision tic 
 
-letraidentificada = (input())
+values = [1,2,2,3,3,3,1,2,3,5,6,5,6,7,13]
+repeat = []
+unique = []
+resultSum = 0
 
-if letraidentificada >= ord(65) and <= ord(92):
-    print("is mayusc the letter")
+for i in values :
+    if i not in unique:
+        unique.append(i)
+    else:
+        resultSum += i
+        if i not in repeat:
+            repeat.append(i)
 
-#  bueno luego seguimos con este dilema tan bacano
+print("Los valores sin repetición son:", unique)
+print("Los valores que se repiten son:", repeat)
+print("La suma de los valores repetidos es:", resultSum)

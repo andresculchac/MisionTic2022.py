@@ -5,7 +5,10 @@
 # tiempo de preparacion 2 horas 
 
 entradafirst =  input().upper().replace(",", "")
-
+contador = 0
 for letras in entradafirst:
-    print(letras, ord(letras))
+    if letras[1] == letras[2]:
+        print("son iguales ")
+    
+        
 

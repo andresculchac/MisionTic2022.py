@@ -1,9 +1,9 @@
 # empezamos numerando las variables
 
 
-cadena_pedro = input()
-cadena_nestor = input()
-cadena_jurado = input()
+cadena_pedro = "LVYY"
+cadena_nestor = "VOXM"
+cadena_jurado = "DWVP"
 sumatoria_para_pedro = 0     
 sumatoria_para_nestor = 0
 

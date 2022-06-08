@@ -10,5 +10,4 @@ nombres = {
     "Jack": 23,
     "Jorge": 32
 }
-
-print(nombres.pop())
+nombres.update

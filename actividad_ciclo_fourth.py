@@ -17,7 +17,7 @@ lista = "d p h u i e t q" #Lista de entrada
 
 contador = 0
 lista2 = []
-
+'''
 # The items() method will return each item in a dictionary, as tuples in a list.
 # i think that i must think in the challenge three as through comparation
 # Tengo que solucionar el orden de comparacion
@@ -25,12 +25,28 @@ lista2 = []
 # en debuggin podemos ver como entra el valor con t 66 puesto que es la que comienza 
 # entonces hay radica nuestro problema 
 # ya lo tenemos casi hecho el paso siguente es que lista tenga prioridad y eso como lo hacemos 
+# pienso que primero debemos hacer un for para reconocer las letras que estan en la lista, luego mandarles hacer el for 
+# siguiente para que hagan la impresion 
+
+'''
+# hacer un programa que saque las letras conforme la lista que tenemos de entrada y sacarlas por orden de lista
+
+for i in lista: 
+    if i in entrada.keys():
+        print(i)
+    
 
 
-for llave,valor in entrada.items():
-    if llave in lista:
-        contador = contador + valor
-        lista2.append(llave)
 
-print(contador)
-print(lista2)
+
+
+
+
+# """for llave,valor in entrada.items():
+#     if llave in lista:
+#         contador = contador + valor
+#         lista2.append(llave)
+
+# print(contador)
+# print(lista2)
+# """

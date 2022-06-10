@@ -16,12 +16,12 @@ contador = 0
 
 for i in lista: 
     if i in entrada.keys():
-        lista_orden.append(i)
+        lista_orden.append(i)   #aqui sacamos el orden de la lista pero en el orden que es de la lista y no del for 
 
 
 for llave, valor in entrada.items():
     if llave in lista:
-        contador= contador + valor
+        contador= contador + valor  #y con este sacamos los valores que realmente no importan el orden porque las claves son unicas 
  
 print(contador)
 lista_to_string = " ".join(lista_orden)

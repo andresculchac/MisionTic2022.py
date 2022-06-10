@@ -9,14 +9,15 @@ output_letter = d p h u i e t q
 '''
 # importar esta libreria nos permite convertir un string con
 # forma de diccionario a un diccionario de verdad 
-import json
+
 
 entrada = {"t":66,"u":72,"d":90,"r":84,"j":36,"g":50,"s":94,"q":62,"f":35}
 #print(type(entrada)) 
 lista = "d p h u i e t q" #Lista de entrada
-
+lista_en_list = ["d", "p", "h", "u", "i", "e", "t", "q"]
+lista_orden = []
 contador = 0
-lista2 = []
+
 '''
 # The items() method will return each item in a dictionary, as tuples in a list.
 # i think that i must think in the challenge three as through comparation
@@ -29,24 +30,26 @@ lista2 = []
 # siguiente para que hagan la impresion 
 
 '''
-# hacer un programa que saque las letras conforme la lista que tenemos de entrada y sacarlas por orden de lista
+# hacer un programa que saque las letras conforme la lista que tenemos de entrada y sacarlas por orden de lista //COMPLETE
+# hacer un programa que sume las entradas de arriba 
+# pregunta del dia porque lista no esta en llave 🤨 xq pues llave solo toma un solo valor cuando esta en for 😔
+# for llave, valor in entrada.items():
+#     if llave in lista:
+#         print(llave)
+   
+# pues tenemos la primera parte ahora solo falta la suma de los numeros 
 
 for i in lista: 
     if i in entrada.keys():
-        print(i)
-    
+        lista_orden.append(i)
 
 
+          
 
+for llave, valor in entrada.items():
+    if llave in lista:
+        contador= contador + valor
 
-
-
-
-# """for llave,valor in entrada.items():
-#     if llave in lista:
-#         contador = contador + valor
-#         lista2.append(llave)
-
-# print(contador)
-# print(lista2)
-# """
+print(contador)
+lista_to_string = " ".join(lista_orden)
+print(lista_to_string)

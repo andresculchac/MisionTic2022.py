@@ -10,7 +10,7 @@ output_letter = d p h u i e t q
 import json
 
 entrada      = json.loads(input())
-lista = "d p h u i e t q" #Lista de entrada
+lista = input() #Lista de entrada
 lista_orden = []
 contador = 0
 

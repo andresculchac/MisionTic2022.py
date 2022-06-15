@@ -5,9 +5,9 @@ familia =  {
     "papa": None
 }
 
-print(json.dumps(familia,indent=40))
+print(json.dumps(familia,indent=10))
 
 
 
-#dump lo que hace es convertir de diccionario a json hace como una serializacion o algo asi 
+#dumps lo que hace es convertir de diccionario a json hace como una serializacion o algo asi 
 #y pues loads es como lo contrario 

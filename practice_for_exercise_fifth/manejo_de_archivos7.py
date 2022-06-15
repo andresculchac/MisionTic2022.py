@@ -1,7 +1,18 @@
+import email
+from email.encoders import encode_noop
 import json
-from urllib.request import urlopen
+'''
+Tratamiento de datos para la base json del las sedes del Putumayo
 
-with urlopen("https://finance.yahoo.com/webservice/v1/symbols/allcurrencies/quote?format=json") as response:
-    source = response.read()
+'''
 
-print(source)
+with open(r"C:\Users\andre\Desktop\mision_tic_retos\practice_for_exercise_fifth\archivos_que_voy_a_manejarXD.py\sedes_putumayo.json", encoding="utf8") as malditasea:
+    data = json.load(malditasea)
+    print("Type:", type(data))
+    print(data)
+    print("Type:", type(data))
+    # no entiendo la parte en que tuvimos que pasar el json validator para que diera un diccionario si no antes era una lista 
+    #por lo visto no todos los json son dict 
+
+
+

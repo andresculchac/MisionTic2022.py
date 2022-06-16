@@ -12,7 +12,7 @@ import json
 import requests
 url = "https://www.datos.gov.co/resource/gt2j-8ykr.json"
 respuesta = requests.get(url)
-print(type(json.loads(respuesta.text)))
+print(type(json.loads(respuesta.text)))  #no se puede porque es lista
 
 
 

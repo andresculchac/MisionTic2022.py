@@ -11,4 +11,4 @@ for state in data['states']:
     print(state['name'], state['abbreviation'])
     
 for states in data['states']:
-    del states['area_codes']
+    del states['area_codes'] 

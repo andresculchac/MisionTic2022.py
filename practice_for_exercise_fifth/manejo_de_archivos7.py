@@ -1,13 +1,11 @@
-import email
-from email.encoders import encode_noop
 import json
 '''
 Tratamiento de datos para la base json del las sedes del Putumayo
 
 '''
 
-with open(r"C:\Users\andre\Desktop\mision_tic_retos\practice_for_exercise_fifth\archivos_que_voy_a_manejarXD.py\sedes_putumayo.json", encoding="utf8") as malditasea:
-    data = json.load(malditasea)
+with open(r"C:\Users\andre\Desktop\mision_tic_retos\practice_for_exercise_fifth\archivos_que_voy_a_manejarXD.py\sedes_putumayo.json", encoding="utf8") as f:
+    data = json.load(f)
     print("Type:", type(data))
     print(data)
     print("Type:", type(data))

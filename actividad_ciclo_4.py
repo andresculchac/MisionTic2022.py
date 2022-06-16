@@ -26,5 +26,3 @@ for llave, valor in entrada.items():
 print(contador)
 lista_to_string = " ".join(lista_orden)
 print(lista_to_string)
-
-# en ciclo fourth_challenge is documentado todo 

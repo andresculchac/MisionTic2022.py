@@ -29,6 +29,4 @@ for i in range(1, len(entrada)):
     
 
 print(",".join(lista_letras),",".join(lista_contadores_letras_consecutivas),sep="\n")
-        
-
     

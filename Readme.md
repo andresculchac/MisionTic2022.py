@@ -6,5 +6,9 @@ v5.0 En esta version vamos a hacer el reto 5 de mision tic que abarca un poco ma
  - Json en Python
     - tipos de archivos ejemplo : csv, png, json 
     - Serializacion 
+    - jwt para hacer peticiones, pero lo pospongo para un futuro
+    - from posponer
+    - apis es un tema muy extenso 
+    - modulos -- temaExtenso 
     
 

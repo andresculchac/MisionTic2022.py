@@ -7,8 +7,10 @@ v5.0 En esta version vamos a hacer el reto 5 de mision tic que abarca un poco ma
     - tipos de archivos ejemplo : csv, png, json 
     - Serializacion 
     - jwt para hacer peticiones, pero lo pospongo para un futuro
-    - from posponer
+    - from object finish
     - apis es un tema muy extenso 
     - modulos -- temaExtenso 
+    - matrices como la del cine aun tengo muchos problemas temaExtenso
+    - recursividad , recursividad es una funcion que se llama a si misma y va como en bucle 
     
 

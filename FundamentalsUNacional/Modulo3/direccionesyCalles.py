@@ -1,8 +1,14 @@
 #Multiplo de 13 
+#Solo trabajo con multiplo de 13
 
-num1 = int(input())
+numCalle = int(input())
+numCasa = int(input())
 
-if num1%13 == 0:
-    print("el numero es multiplo de 13")
-elif num1%13 != 0:
-        print("El numero no es multiplo de 13")
+if numCalle%13 == 0:
+    if numCasa%13 == 0:
+        print("La direccion calle",numCalle,"#",numCasa,"esta prohibida")
+elif numCalle%13 != 0:
+    if numCasa%13 != 0:
+        print("La direccion calle",numCalle,"#",numCasa,"no esta prohibida")
+
+

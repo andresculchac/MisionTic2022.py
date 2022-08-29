@@ -17,7 +17,7 @@ if numCalle%13  == 0:
     print("La direccion calle",numCalle,"#",numCasa,"esta prohibida")
 elif numCasa%13 == 0:
     print("La direccion calle",numCalle,"#",numCasa,"esta prohibida")
->>>>>>> Stashed changes
+
 
 elif numCalle%13 != 0: #osea no es multiplo
     if numCasa%13 != 0:

@@ -1,5 +1,8 @@
+#logica en whiteboard
+
+
 num1 = int(input())
-residuo = num1%2
+residuo = num1%2   #saca el residuo de un numero y si da 0 es par si no es impar 
 
 
 if residuo == 0:

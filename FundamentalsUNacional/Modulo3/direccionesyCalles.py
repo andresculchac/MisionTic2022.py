@@ -4,11 +4,11 @@
 numCalle = int(input())
 numCasa = int(input())
 
-if numCalle%13 or numCalle%23:
-    print("La direccion calle",numCalle,"#",numCasa,"esta prohibida")
+if numCalle%13 ==0 or numCalle%23 ==0:
+    print("La direccion calle",numCalle,"#",numCasa,"esta prohibida ")
 
-elif numCasa%13 or numCasa%23:
-    print("La direccion calle",numCasa,"#",numCalle,"esta prohibida")
+elif numCasa%13 ==0 or numCasa%23 ==0:
+    print("La direccion calle",numCalle,"#",numCasa,"esta prohibida")
 
 else:
     print("La direccion calle",numCalle,"#",numCasa,"no esta prohibida")

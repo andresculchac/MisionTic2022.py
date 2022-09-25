@@ -7,8 +7,5 @@ if (ancho%2 != 0 and altura%2 != 0) < 20:
     for j in range(1,altura+1):
         j = "+"
     for i in range(1,altura+1):
-        if i == mitad:
-            i = "+"
-        else:
-            i = "0"
-        print(str(i)*int(mitadAncho-1)+str(j)+str(i)*int(mitadAncho-1))
+        i = "+" if i == mitad else "0"
+        print(i * int(mitadAncho-1) + str(j) + i * int(mitadAncho-1))

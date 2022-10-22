@@ -1,5 +1,6 @@
 ancho = int(input())
 altura = int(input())
+
 mitad = altura/2+0.5
 mitadAncho = ancho /2 +0.5
 if (ancho%2 != 0 and altura%2 != 0) < 20:

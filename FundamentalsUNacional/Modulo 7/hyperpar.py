@@ -14,6 +14,3 @@ def listend(): #Esta funcion recibe inputs y termina cuando le pones un -1
 
 x = [2080]
 
-for i in x:
-    j = i+1
-    print(j)

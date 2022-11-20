@@ -8,13 +8,13 @@ import math
 lista = []
 tranformacion = []
 
-def inputs(): #hacer una funcion que si pongo un numero input pues se ejecute tres veces 
+def inputs(): #hacer una funcion que si pongo un numero input pues se ejecute tres veces #tipos de inputs
     request = int(input())
     while request>0:
-      j = float(input())
+      j = float(input())  #Se evalua el tipo de entrada que se le va a poner ej: int, float, str
       lista.append(j)
       request -= 1
-      
+    #print(lista) #Guia para ver como esta quedando la salida de lista 
 
 inputs()
 

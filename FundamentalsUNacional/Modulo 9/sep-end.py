@@ -12,9 +12,11 @@
 
 #probando .join
 
-# words_list = ['ix', 'mx']
+words_list = ['ix', 'mx']
+uwu = 'hola'
 # p = []
 # l = ''.join(words_list)
 # print(l)
 # b = p.append(l)
 # print(p)
+print(uwu[-2:])

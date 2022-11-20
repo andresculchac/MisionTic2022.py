@@ -1,19 +1,15 @@
 contador = 0
 almacen = []
 listaPorSiAcaso = []
-a = ["obelix","extreme","ave"]
+a = ["obelix","julianicus","pedro","nicolax"]
 for i in range(len(a)):
     contador = 0
-    for b in a[i]:
-        z = len(a[i])
-        contador +=1
-        if contador == z-1:
-            almacen.append(b)
-            
-        if contador == z:
-            almacen.append(b)
-            
+    robar =a[i][-2:]
+    almacen.append(robar)
 
+            
+            
+            
 
 print(almacen)
 print()

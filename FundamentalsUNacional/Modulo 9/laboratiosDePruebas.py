@@ -1,6 +1,5 @@
-contador = 0
+
 almacen = []
-listaPorSiAcaso = []
 
 a = ["obelix","julianicus","pedro","Dhalekanya","nicolax"]
 for i in range(len(a)):
@@ -32,8 +31,7 @@ for i in range(len(a)):
             
 
 print(almacen)
-print()
-print()
+
 #necesito capturar a los dos primeros y compararlos y asi sucesivamente
 #objetivo sacarlos desde el principio ordenados ya para no romperme la cabeza por aca
 

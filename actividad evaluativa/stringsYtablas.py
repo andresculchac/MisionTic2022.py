@@ -38,12 +38,31 @@ if conv1[1] == conv2[0]:
         xy = int(input())
         aaa = listaapendice4.append(xy)
     u.append(listaapendice4)
+    listax = []
+    listay = []
+    v = len(u[0])
+    for i in range(len(x)):
+        for j in range(v):
+            z = x[i][0] * u[0][j]
+            listax.append(z)
+
+    print(listax)
+    l = len(u[0])
+    for i in range(len(u)):
+        for v in range(l):
+            m = x[i][1] * u[1][v]
+            listay.append(m)
+    print(listay)
+    #este es el que suma y de una vez saca la lista xd
+    #
+    sumList = len(listax)
+    for i in range(sumList):
+        print(listax[i]+listay[i],end="\n")
 
     
 
 else:
     print("Las columnas de la primera tabla deben ser iguales a las filas de la segunda tabla")
-
 
 
 

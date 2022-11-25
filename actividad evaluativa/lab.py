@@ -1,8 +1,5 @@
-# a=['1','2','3','4']
-
-# b= [int(x) for x in a]
-
-# print(b)
+#Estimado profesor aqui puede ver que el codigo ya esta adaptado
+#para ponerlo a cualquier lista solo me falta el tiempo para la entrada
 
 x = [[5,4],[1,-3]]
 u = [[8,4,0],[-1,6,7]]
@@ -27,16 +24,5 @@ print(listay)
 sumList = len(listax)
 for i in range(sumList):
     print(listax[i]+listay[i])
-# print(u[0][0])
-#multiplicacionsinfor = 
-#print(x[0][0])
-# contadoraja = 0
-# for i in u:
-#     print(x[0][contadoraja] * i[0])
-#     contadoraja += 1
 
-# for j in range(len(u)):
-#     for i in u:
-#         print(x[0][j] * i[0])
-#     # print(x[0][j] * j[0])
 

@@ -11,9 +11,20 @@ separate = entrada2.split("x")
 conv1 = [int(x) for x in string]
 conv2 = [int(j) for j in separate]
 
+#Pedir numeros comenzando por las filas
+numinput = conv1[0]*conv1[1]
+numinput2 = conv2[0]*conv2[1]
+suminputs = numinput + numinput2
+numlist = []
+for _ in range(suminputs):
+    xy = int(input())
+    numlist.append(xy)
+
+
 #conv[1] y conv[0] sean iguales de lo contrario no se puede
 if conv1[1] == conv2[0]:
-    print("valido para multiplicacion de matrices")
+    print(numlist)
+
 else:
     print("Las columnas de la primera tabla deben ser iguales a las filas de la segunda tabla")
 

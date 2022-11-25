@@ -23,7 +23,7 @@ print(listay)
 #
 sumList = len(listax)
 for i in range(sumList):
-    print(listax[i]+listay[i]).join()
+    print(listax[i]+listay[i])
 # print(u[0][0])
 #multiplicacionsinfor = 
 #print(x[0][0])

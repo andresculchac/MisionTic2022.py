@@ -1,8 +1,8 @@
 #Estimado profesor aqui puede ver que el codigo ya esta adaptado
 #para ponerlo a cualquier lista solo me falta el tiempo para la entrada
 
-x = [[5,4],[1,-3]]
-u = [[8,4,0],[-1,6,7]]
+x = [[4,6],[0,0]]
+u = [[5,1,2],[0,0,0]]
 
 listax = []
 listay = []

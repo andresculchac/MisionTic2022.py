@@ -1,17 +1,18 @@
 '''
 Esta es la entrada estimado profesor
 '''
-entrada = input()
-entrada2 = input()
 inputPrincipal = []
 InputPrincipal2 = []
+entrada = input()
+entrada2 = input()
+
 birl = []
 birl2 = []
 
 ul = []
 uj = []
 
-x = []
+
 u = []
 
 #Separacion de string mediante la fun(split())
@@ -46,64 +47,37 @@ if conv1[1] == conv2[0]:
         if len(birl2) == list4:
             InputPrincipal2.append(birl2)
             birl2 = []
-    
-    # listaapendice =     []
-    # listaapendice2 =    []
-    # listaapendice3 =    []
-    # listaapendice4 =    []
-
-    # #Matriz x
-    # for _ in range(maxX):
-    #     xy = int(input())
-    #     aaa = listaapendice.append(xy)
-    # x.append(listaapendice)
-    
-    # for _ in range(maxX):
-    #     xy = int(input())
-    #     aaa = listaapendice2.append(xy)
-    # x.append(listaapendice2)
-
-    # #matriz u
-    
-    # for _ in range(maxU):
-    #     xy = int(input())
-    #     aaa = listaapendice3.append(xy)
-    # u.append(listaapendice3)
-    # for _ in range(maxU):
-    #     xy = int(input())
-    #     aaa = listaapendice4.append(xy)
-    # u.append(listaapendice4)
 
     #Listax,ListaY Almacenamiento Y ejecucion de Multiplicas Matrices
     listax = []
     listay = []
-    v = len(u[0])
-    for i in range(len(x)):
+    v = len(InputPrincipal2[0])
+    for i in range(len(inputPrincipal)):
         for j in range(v):
-            z = x[i][0] * u[0][j]
-            listax.append(z)
-    print(listax)
+            z = inputPrincipal[i][0] * InputPrincipal2[0][j]
+            listainputPrincipal.append(z)
+    print(listainputPrincipal)
 
-    l = len(u[0])
-    for i in range(len(u)):
+    l = len(InputPrincipal2[0])
+    for i in range(len(InputPrincipal2)):
         for v in range(l):
-            m = x[i][1] * u[1][v]
+            m = inputPrincipal[i][1] * InputPrincipal2[1][v]
             listay.append(m)
     print(listay)
-    #este es el que suma y de una vez saca la lista xd
+    #este es el que suma y de una vez saca la lista inputPrincipald
     #
-    sumList = len(listax)
+    sumList = len(listainputPrincipal)
     for i in range(sumList):
-        print(listax[i]+listay[i],end=" ")
+        print(listainputPrincipal[i]+listay[i],end=" ")
     print("")
     contador = 0
     # for i in range(conv1[0]):       #filas
     #     for j in range(conv2[1]):   #columnas
-    #         print(listax[i]+listay[i],end=" ")
+    #         print(listainputPrincipal[i]+listay[i],end=" ")
     #     print("")
     for i in range(conv1[0]):       #filas
         for j in range(conv2[1]): #columnas  
-            print(listax[contador]+listay[contador],end=" ")
+            print(listainputPrincipal[contador]+listay[contador],end=" ")
             contador += 1
         print("")
 

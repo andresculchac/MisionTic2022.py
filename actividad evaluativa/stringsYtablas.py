@@ -6,38 +6,42 @@ entrada2 = input()
 x = []
 u = []
 
-#separacion con x y es convertido a list
+#Separacion de string mediante la fun(split())
 string = entrada.split("x")
 separate = entrada2.split("x")
 
+#Entradas str a int
 conv1 = [int(x) for x in string]
 conv2 = [int(j) for j in separate]
-if conv1[1] == conv2[0]:
-    #Pedir numeros comenzando por las filas
-    numinput = conv1[0]*conv1[1] #si seria 2*2 seria 4 numeros que pide
-    numinput2 = conv2[0]*conv2[1] #digameos 2*3 seria 6 numeros de a dos listas
-    suminputs = numinput + numinput2
-    listaapendice = []
-    listaapendice2 = []
-    listaapendice3 = []
-    listaapendice4 = []
-    for _ in range(conv1[0]): #tengo que generar l listas
+
+#Condicional num columnas A == Num filas B
+if conv1[1] == conv2[0]: 
+    listaapendice =     []
+    listaapendice2 =    []
+    listaapendice3 =    []
+    listaapendice4 =    []
+
+    #Matriz x
+    for _ in range(conv1[0]):
         xy = int(input())
         aaa = listaapendice.append(xy)
     x.append(listaapendice)
-    for _ in range(conv1[1]): #tengo que generar l listas
+    for _ in range(conv1[1]):
         xy = int(input())
         aaa = listaapendice2.append(xy)
     x.append(listaapendice2)
-    #matriz 2
-    for _ in range(conv2[0]): #tengo que generar l listas
+
+    #matriz u
+    for _ in range(conv2[1]):
         xy = int(input())
         aaa = listaapendice3.append(xy)
     u.append(listaapendice3)
-    for _ in range(conv2[1]): #tengo que generar l listas
+    for _ in range(conv2[1]):
         xy = int(input())
         aaa = listaapendice4.append(xy)
     u.append(listaapendice4)
+
+    #Listax,ListaY Almacenamiento Y ejecucion de Multiplicas Matrices
     listax = []
     listay = []
     v = len(u[0])
@@ -45,8 +49,8 @@ if conv1[1] == conv2[0]:
         for j in range(v):
             z = x[i][0] * u[0][j]
             listax.append(z)
-
     print(listax)
+
     l = len(u[0])
     for i in range(len(u)):
         for v in range(l):
@@ -57,7 +61,13 @@ if conv1[1] == conv2[0]:
     #
     sumList = len(listax)
     for i in range(sumList):
-        print(listax[i]+listay[i],end="\n")
+        print(listax[i]+listay[i],end=" ")
+    print("")
+
+    for i in range(conv1[0]):       #filas
+        for j in range(conv2[1]):   #columnas
+            print(listax[i]+listay[i],end=" ")
+        print("")
 
     
 

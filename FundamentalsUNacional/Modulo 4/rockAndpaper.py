@@ -1,22 +1,22 @@
-playerNum1 = input()
-playerNum2 = input()
+andresPlayer = input()
+julianSapo = input()
 
-if playerNum1 == playerNum2:
+if andresPlayer == julianSapo:
     print("empate")
 
-elif playerNum1 == "tijera" and playerNum2 == "papel": 
+elif andresPlayer == "tijera" and julianSapo == "papel": 
     print("tijera vence papel")   
-elif playerNum1 == "papel" and playerNum2 == "tijera":
+elif andresPlayer == "papel" and julianSapo == "tijera":
     print("tijera vence papel")
-elif playerNum1 == "papel" and playerNum2 == "tijera ": #este va con espacio en tijera por el problema de la platform
+elif andresPlayer == "papel" and julianSapo == "tijera ": #este va con espacio en tijera por el problema de la platform
     print("tijera vence papel")
 
-elif playerNum1 == "papel" and playerNum2 == "piedra":
+elif andresPlayer == "papel" and julianSapo == "piedra":
     print("papel vence piedra")
-elif playerNum1 == "piedra" and playerNum2 == "papel":
+elif andresPlayer == "piedra" and julianSapo == "papel":
     print("papel vence piedra")
 
-elif playerNum1 == "piedra" and playerNum2 == "tijera":
+elif andresPlayer == "piedra" and julianSapo == "tijera":
     print("piedra vence tijera")
-elif playerNum1 == "tijera" and playerNum2 == "piedra":
+elif andresPlayer == "tijera" and julianSapo == "piedra":
     print("piedra vence tijera")

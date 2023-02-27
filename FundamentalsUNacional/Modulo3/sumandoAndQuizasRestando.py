@@ -1,12 +1,12 @@
-valueX = float(input())
+always1 = float(input())
 
 
-if valueX > 10:
-    increase = valueX + 5
-    valueX -= 8
+if always1 > 10:
+    increase = always1 + 5
+    always1 -= 8
     print(increase)
-    print(valueX)
+    print(always1)
 
 else:
-    print(valueX+5)
+    print(always1+5)
 

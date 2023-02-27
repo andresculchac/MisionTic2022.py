@@ -1,12 +1,12 @@
-capitalInical = int(input()) #son enteros porque los ejemplos solo manejan enteros
-retornoK = int(input())
-equation = ((retornoK-capitalInical)/capitalInical)*100
+startUp = int(input())
+return1 = int(input())
+equation1 = ((return1-startUp)/startUp)*100
 
-if retornoK>capitalInical:
+if return1>startUp:
     
-    print("Hubo una ganancia de $",retornoK-capitalInical,"correspondiente al",equation,"% del capital invertido")
-elif retornoK<capitalInical:
+    print("Hubo una ganancia de $",return1-startUp,"correspondiente al",equation1,"% del capital invertido")
+elif return1<startUp:
     
-    print("Hubo una perdida de $",capitalInical-retornoK,"correspondiente al",equation*-1,"% del capital invertido")
+    print("Hubo una perdida de $",startUp-return1,"correspondiente al",equation1*-1,"% del capital invertido")
 else:
     print("No hubo ni ganancia ni perdida, la inversion fue un desperdicio de tiempo, pero al menos no de dinero")

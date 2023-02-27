@@ -1,21 +1,26 @@
-l=[]
-def f_1(x):
-	suma = 0
-	for i in range(1,x):
-		if (x % (i) == 0):
-			suma += (i)
-	if x == suma:
+perfecteds=[]
+
+
+def vine(x):
+	xx = 0
+	for perf in range(1,x):
+		if (x % (perf) == 0):
+			xx += (perf)
+	if x == xx:
 		return True
 	else:
 		return False
 
-m=int(input())
-while m>0:
-  m_1=int(input())
-  l.append(m_1)
-  m-=1
-for i in l:
-	if f_1(i)==True:
-		print(i,"es perfecto")
+
+hiv=int(input())
+while hiv>0:
+  nice=int(input())
+  perfecteds.append(nice)
+  hiv-=1
+
+  
+for lil in perfecteds:
+	if vine(lil)==True:
+		print(lil,"es perfecto")
 	else:
-		print(i,"no es perfecto")
+		print(lil,"no es perfecto")

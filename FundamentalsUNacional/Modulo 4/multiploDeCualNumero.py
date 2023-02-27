@@ -1,12 +1,13 @@
-num1 = int(input())
+alwaystheBest = int(input())
 
-if num1 %2 == 0:
-    print(num1,"es multiplo de 2")
-elif num1 %3 == 0:
-    print(num1,"es multiplo de 3")
-elif num1 %5 == 0:
-    print(num1,"es multiplo de 5")
-elif num1 %7 == 0:
-    print(num1,"es multiplo de 7")
+if alwaystheBest %2 == 0:
+    print(alwaystheBest,"es multiplo de 2")
+elif alwaystheBest %3 == 0:
+    print(alwaystheBest,"es multiplo de 3")
+elif alwaystheBest %5 == 0:
+    print(alwaystheBest,"es multiplo de 5")
+elif alwaystheBest %7 == 0:
+    print(alwaystheBest,"es multiplo de 7")
 else:
-    print(num1,"no es multiplo de ninguno de los primeros cuatro primos")
+    print(alwaystheBest,"no es multiplo de ninguno de los primeros cuatro primos")
+#Hecho por andres yamith culchac 

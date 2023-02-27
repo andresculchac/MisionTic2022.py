@@ -17,15 +17,12 @@ if minutos == 0 and minutos < 10 and horas == 12:
         print(str(conversion)+":"+str(minutos))
 
 
-
 elif minutos == 0 and minutos >= 10:
     conversion = 12-horas
     #print(conversion,":", espejoMinutos)
     print(str(conversion)+":"+str(espejoMinutos))
     #print("test 1")
 #elif minutos == 0 and minutos >= 10:
-
-
 
 
 
@@ -45,5 +42,5 @@ elif espejoHoras == -1 and minutos!=0:
     print(str(correccion)+":"+str(espejoMinutos))
     #print("test chao")
 
-
+#Este toca hacerlo de nuevo porque no esta bien hecho
 

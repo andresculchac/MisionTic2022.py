@@ -1,9 +1,9 @@
-valorHora = int(input())
-valorExtra = int(input())
+valuehour = int(input())
+valueAlso = int(input())
 
-if valorExtra >= 46:
-    horasExtras = (valorExtra - 45)*(valorHora*(150/100))
-    salario = valorHora * 45
+if valueAlso >= 46:
+    horasExtras = (valueAlso - 45)*(valuehour*(150/100))
+    salario = valuehour * 45
     print("$",int(horasExtras) + salario)
 else:
-    print("$",valorExtra * valorHora)
+    print("$",valueAlso * valuehour)

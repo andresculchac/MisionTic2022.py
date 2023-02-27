@@ -1,11 +1,11 @@
-dineroBanco = int(input())
+moneyBank = int(input())
 dineroQueVaQuedando = 0
 
 '''problemas con '''
-if dineroBanco >= 0 and dineroBanco <= 1000000:
-    x = dineroBanco //50000
+if moneyBank >= 0 and moneyBank <= 1000000:
+    x = moneyBank //50000
     conversion = x*50000
-    restante = dineroBanco - conversion
+    restante = moneyBank - conversion
     dineroQueVaQuedando += restante
     if x != 0:
         print(x,"de $50000")

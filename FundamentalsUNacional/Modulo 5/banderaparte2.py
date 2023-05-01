@@ -1,4 +1,7 @@
 l,h = int(input()),int(input())
-#Por ahora entiendo que las lineas van para abajo de una en una
-for i in range(l*h):
-    print(i,i)
+#The Prints going to one by one
+#Discover the half
+#First Step : Discover the table with zero
+
+for i in range(h):
+    print("0"*l)

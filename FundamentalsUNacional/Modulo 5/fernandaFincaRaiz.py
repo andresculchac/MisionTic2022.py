@@ -1,14 +1,14 @@
 
-numLotes = float(input())
-numChiki = float(input())
+andresc = float(input())
+chapid = float(input())
 incrementoChiki =float(input())
 
 contadorM2 = 0
 
-while numLotes > 0:
-    exponencia = numChiki **2
+while andresc > 0:
+    exponencia = chapid **2
     contadorM2 += exponencia
-    incremento = numChiki + incrementoChiki
-    numChiki = incremento
-    numLotes -= 1
+    incremento = chapid + incrementoChiki
+    chapid = incremento
+    andresc -= 1
 print("El area total es de",contadorM2,"metros cuadrados")

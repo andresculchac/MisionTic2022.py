@@ -1,12 +1,12 @@
-listxxx=int(input())
-keybord=[]
-Acumula=0
-siner=0
-for i in range(1,listxxx+1):
-    siner=float(input())
-    Jobb=i*siner-Acumula
+entrada=int(input())
+listaEntrante=[]
+acumulador=0
+acumulador2=0
+for i in range(1,entrada+1):
+    acumulador2=float(input()) #No era necesario multiplicar por algo, solo pedirlo en cada ciclo
+    Jobb=i*acumulador2-acumulador
     Jobb=int(Jobb)
-    Acumula+=Jobb
-    keybord.append(Jobb)
-for ul in keybord:
+    acumulador+=Jobb
+    listaEntrante.append(Jobb)
+for ul in listaEntrante:
     print(ul)

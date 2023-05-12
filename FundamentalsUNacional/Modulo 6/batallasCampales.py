@@ -1,25 +1,17 @@
-lista = [180,175,186,179,181,173,181,170]
+pedirEntrada = int(input())
+lista = []
 
-#ordenar por mayor y final por ciclos
-
-#First Step
-
-# pedirEntrada = int(input())
-# ListEmpty = []
-
-# for i in range(1,(pedirEntrada*2)+1):
-#     requestInput = int(input()) #The types of variable  can change
-#     addList = ListEmpty.append(requestInput)
-# print(ListEmpty)
+for i in range(1,(pedirEntrada*2)+1):
+    requestInput = int(input()) #The types of variable  can change
+    addList = lista.append(requestInput)
+#print(lista)
 
 #second Step 
     #Ciclo que organiza los numeros pares e impares bien lindo
 
 
 lista2 = []
-#lista esperada # [6,1,5,2,4,3]
-mayor = lista[0]
-menor = lista[0]
+
 numLista = len(lista)
 
 for i in range(int(numLista/2)):
@@ -31,7 +23,7 @@ for i in range(int(numLista/2)):
     lau = lista.remove(y)
 
 
-print(lista2)
+#print(lista2)
 for i in range(int(numLista/2)):
     primerpar = lista2[0]
     segundopar = lista2[1]
@@ -47,3 +39,5 @@ for i in range(int(numLista/2)):
 
 
 print("Sobreviven",len(lista2),"soldados")
+
+#Para mi esta bien pero no encuentro el error xD, asi que me toca con un monitor.

@@ -18,6 +18,15 @@
 lista = [1,6,4,2,3,5]
 lista2 = []
 #lista esperada # [6,1,5,2,4,3]
+mayor = lista[0]
+menor = lista[0]
 numLista = len(lista)
-for i in range (numLista):
-    print(lista[i])
+for i in range (1,numLista):
+    if lista[i] > mayor:
+        mayor = lista[i]
+
+    if lista[i] < menor:
+        menor = lista[i]
+x = lista2.append(menor)
+y = lista2.append(mayor)
+print(lista2)

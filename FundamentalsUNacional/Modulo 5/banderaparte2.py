@@ -11,16 +11,17 @@
 #         else:
 #             print("0"*width)
 
-altura = 7
-ancho = 5                                                               
 
-for i in range(altura):
-    for j in range(ancho): 
-        if j == 0:
-            ceros = "0"
-        if j == 2:
-            ultimos = "0"
+ancho = int(input()) 
+altura = int(input())
+                                                        
+
+for i in range(altura): 
+    fila = ""
+    for x in range(ancho):
+        if x == ancho//2 or i == altura//2:
+            fila += "+"  
         else:
-            mases = "+"
-    print(ceros,mases,ultimos)
+            fila += "0"       
+    print(fila)
     

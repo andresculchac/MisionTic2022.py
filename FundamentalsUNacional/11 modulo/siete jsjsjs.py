@@ -16,4 +16,4 @@ for inicio in range(int(input())):
     for intermedio in range(10):
         ch, cp = prote_b.pop(), red.pop()
         sinergy_init,avz1 = sinergy_init+1 if ch>cp else sinergy_init , avz1+1 if cp>ch else avz1
-    print(f"Puntos humano:{sinergy_init} Puntos plataforma: {avz1}")
+    print(f"Puntos humano: {sinergy_init} Puntos plataforma: {avz1}")

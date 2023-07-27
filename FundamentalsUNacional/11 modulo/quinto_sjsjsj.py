@@ -1,4 +1,4 @@
-#dificil pero entretendio laverdad
+
 from datetime import datetime
 cillac, hva= datetime.strptime("00:00:00",'%X') - datetime.strptime("00:00:00",'%X'), 0
 for inicio in range(int(input())):

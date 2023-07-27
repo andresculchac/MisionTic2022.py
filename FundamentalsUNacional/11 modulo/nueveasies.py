@@ -30,3 +30,13 @@ else:
         calendar_init_self = list(map(int,input().split("/")))
         google_calendar_self(calendar_init_self[2],calendar_init_self[1])
         print("\n")
+
+# #if randint_datetime1 == -1:
+#     a = int(input("Qué año?\n"))
+#     for i in range(1,13):
+#         i = {}
+#         b = {}
+#         print("___________________________________________________ "+month_init[i])
+#         google_calendar_self(a,i)
+#         print()
+# #

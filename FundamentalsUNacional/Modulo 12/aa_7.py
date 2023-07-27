@@ -1,9 +1,9 @@
-signo = {'+': True, '-':False}   #MI FAVORITO DE ESTE
+señales = {'+': True, '-':False}   #MI FAVORITO DE ESTE
 def generar(n:int) -> list:
     m = []
     for _ in range(n): m.append(list(range(1,n+1)))
     return m
-def movx(m:list,n:int,d:bool) -> list:
+def movement(m:list,n:int,d:bool) -> list:
     m[n-1] = [m[n-1][-1]]+m[n-1][:-1] if d else m[n-1][1:]+[m[n-1][0]]
     return m
 def movy(m:list,n:int,d:bool) -> list:
@@ -12,5 +12,5 @@ def movy(m:list,n:int,d:bool) -> list:
     return m
 for _ in range(int(input())):
     m, a = generar(int(input())), input().split()
-    for i in a: m = movx(m,int(i[1]),signo[i[-1]]) if i[0] == 'F' else  movy(m,int(i[1]),signo[i[-1]])
+    for i in a: m = movement(m,int(i[1]),señales[i[-1]]) if i[0] == 'F' else  movy(m,int(i[1]),señales[i[-1]])
     print(str(m).replace('[[','').replace(', ','').replace('][','\n').replace(']]','\n'))

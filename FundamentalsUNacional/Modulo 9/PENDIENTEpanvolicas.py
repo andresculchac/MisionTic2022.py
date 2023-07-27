@@ -1,4 +1,4 @@
-def panVolicas(ingreso):
+def sourcepanvolica(ingreso):
   red_u=["a","e","i","o","u"]
 
   for xy in red_u:
@@ -8,14 +8,14 @@ def panVolicas(ingreso):
 
 #esta si 
 
-nana=int(input())
-for _ in range(nana):
+panvolica11=int(input())
+for _ in range(panvolica11):
   simp = input()
-  nana-=1
+  panvolica11-=1
 
 
   #entrada 11 
-  if panVolicas(simp):
+  if sourcepanvolica(simp):
     print("Panvolica")
   else:
     print("No es panvolica")

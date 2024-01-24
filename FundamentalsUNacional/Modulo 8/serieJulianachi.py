@@ -9,7 +9,7 @@ def findDivisor(num):
     return contador
 
 
-
+impresionFinal = list()
 
 flag = True
 while flag:
@@ -22,11 +22,14 @@ while flag:
             algorithm = m + findDivisor(m)
             m = algorithm
             if m == solicitar:
-                print("Pertenece a la serie de Julianachi")
+                impresionFinal.append("Pertenece a la serie de Julianachi")
                 break
         else:
-            print("No pertenece a la serie de Julianachi")
+            impresionFinal.append("Pertenece a la serie de Julianachi")
             break
+
+for j in impresionFinal:
+    print(j)
 
 
 

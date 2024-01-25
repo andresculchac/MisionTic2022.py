@@ -1,7 +1,7 @@
 #hacer una serie de fibonacci infinita
 
 
-def findDivisor(num):
+def findDivisor(num): #Encuentra los divisores de un numero
     contador = 0
     for i in range(1,num+1):
         if num%i == 0:
@@ -11,11 +11,12 @@ def findDivisor(num):
 
 impresionFinal = list()
 
-flag = True
-while flag:
+while True:
     solicitar = int(input())
     if solicitar == 0:
         break
+    elif solicitar == 1:
+        impresionFinal.append("Pertenece a la serie de Julianachi")
     else:
         m = 1
         for i in range(5000):
@@ -25,8 +26,7 @@ while flag:
                 impresionFinal.append("Pertenece a la serie de Julianachi")
                 break
         else:
-            impresionFinal.append("Pertenece a la serie de Julianachi")
-            break
+            impresionFinal.append("No pertenece a la serie de Julianachi")
 
 for j in impresionFinal:
     print(j)

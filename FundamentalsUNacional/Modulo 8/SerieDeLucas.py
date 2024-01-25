@@ -1,34 +1,35 @@
-def findDivisor(num):
-    contador = 0
-    for i in range(1,num+1):
-        if num%i == 0:
-            contador += 1
-    return contador
+lista = [2,1]
 
+s = lista[0] # 2
+m = lista[1] # 1
 
-impresionFinal = list()
+rango = 10
+topeA = 3
+topeB = 50
+contador = 1 #creo que toca empezar desde uno puesto que el primer arranque no esta contado como tal
 
-flag = True
-while flag:
-    solicitar = int(input())
-    if solicitar == 0:
-        break
-    else:
-        m = 1
-        for i in range(5000):
-            algorithm = m + findDivisor(m)
-            m = algorithm
-            if m == solicitar:
-                impresionFinal.append("Pertenece a la serie de Julianachi")
-                break
-        else:
-            impresionFinal.append("Pertenece a la serie de Julianachi")
+for i in range(1,rango-1):
+
+    y = s + m
+    lista.append(y)
+    s = y
+    m = lista[i]
+    if i >= topeA:
+        contador += 1
+        if i == contador:
             break
 
-for j in impresionFinal:
-    print(j)
 
 
+print(lista)
+print("Contador", contador)
+
+
+
+
+    
+
+    
 
 
 

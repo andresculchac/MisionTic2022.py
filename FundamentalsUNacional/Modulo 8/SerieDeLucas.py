@@ -10,8 +10,8 @@ def fib(n):
         return 1
     return (fib(n-1)+fib(n-2))
 
-a = 200 
-b = 300
+a = int(input())
+b = int(input())
 contador = 0    
 for i in range(10000000):
     if fib(i) >= a and fib(i)<= b:

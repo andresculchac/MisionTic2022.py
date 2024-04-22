@@ -1,30 +1,24 @@
-lista = [2,1]
 
-s = lista[0] # 2
-m = lista[1] # 1
+#Como crear una funcion xD
 
-rango = 500 #hasta las primeras 500 sucesione 
-topeA = 200
-topeB = 300
-contador = 1 #creo que toca empezar desde uno puesto que el primer arranque no esta contado como tal
+def fib(n):
+    if n == 0:
+        return 0
+    elif n==1:
+        return 2
+    elif n==2:
+        return 1
+    return (fib(n-1)+fib(n-2))
 
-for i in range(1,rango-1):
-
-    y = s + m
-    lista.append(y)
-    s = y
-    m = lista[i]
-    if i >= topeA:
+a = int(input())
+b = int(input())
+contador = 0    
+for i in range(10000000):
+    if fib(i) >= a and fib(i)<= b:
         contador += 1
-        if i == contador:
-            break
-
-
-
-print(lista)
-print("Contador", contador)
-
-
+    if fib(i)>b:
+        break
+print(contador)
 
 
     

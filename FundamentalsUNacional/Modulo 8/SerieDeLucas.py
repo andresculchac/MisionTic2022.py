@@ -3,9 +3,9 @@ lista = [2,1]
 s = lista[0] # 2
 m = lista[1] # 1
 
-rango = 10
-topeA = 3
-topeB = 50
+rango = 500 #hasta las primeras 500 sucesione 
+topeA = 200
+topeB = 300
 contador = 1 #creo que toca empezar desde uno puesto que el primer arranque no esta contado como tal
 
 for i in range(1,rango-1):

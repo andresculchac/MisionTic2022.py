@@ -1,2 +1,0 @@
-Arrays , por ejemplo ese ejercicio del cine que incluye hasta las funciones bastante interesante 
-serializacion es un tema complejo de entender que por ahora lo saltare porque no le veo la utilidad 

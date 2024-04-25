@@ -13,7 +13,7 @@ def removeStr(string): #lo que aprendi es que hay que retornar lo que dio
 
 organize = []
 removeAnoyiing = []
-with open('conversaciones.txt', 'r') as files:
+with open(r'C:\Users\andre\andresLenovo\FundamentalsUNacional\Modulo 9\conversaciones.txt', 'r') as files:
     for file in files:
         strLower    =   file.lower()
         strsplit    =   strLower.split(' ')
@@ -26,7 +26,19 @@ for i in organize: #sirve para quitar simbolos que no sirven y para dejar trabaj
         orgLista.append(sinMolestias)
     removeAnoyiing.append(orgLista)
         
-print(removeAnoyiing)
+
+opositivos = 0
+causativos = 0
+
+lenght = len(removeAnoyiing) #4
+for j in removeAnoyiing:
+    for palabras in j:
+        if palabras in twoDicts["causativos"]:
+            causativos += 1
+        elif palabras in twoDicts["opositivos"]:
+            opositivos +=   1
+#Me doy cuenta que la embarre con la division porque era se separar en frases grandes            
+print()
 
 
         

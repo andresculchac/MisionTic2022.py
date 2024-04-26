@@ -2,7 +2,7 @@
 twoDicts = {'opositivos':["sin embargo","no obstante","ahora bien","aun asi"],
             'causativos':["por tanto", "dado que", "por consiguiente", "asi pues", "por ende"]}
 
-def removeStr(string): #lo que aprendi es que hay que retornar lo que dio
+def removeStr(string): #algoritmo para elimar caracteres especificos que no quiero, no importan la cantidad
     palabrasEliminar = [',','.','\n']
     for i in range(len(palabrasEliminar)):
         for revisar in string:
@@ -23,29 +23,21 @@ with open(r'C:\Users\User\laptopProgramming\FundamentalsUNacional\Modulo 9\conve
         hola2 = quitarnFeas.replace('\n','')
         organize.append(hola2) #Como se maneja por filas hasta ahí podemos trabajar
         
-print(organize)
+#Algoritmo que revise de dos en dos las palabras para que encontremos los opositivos o causativos
 
-for i in organize: #sirve para quitar simbolos que no sirven y para dejar trabajada la lista
-    orgLista = []
-    for j in i:
-        sinMolestias = removeStr(j)
-        orgLista.append(sinMolestias)
-    removeAnoyiing.append(orgLista)
-        
 
-opositivos = 0
-causativos = 0
-
-lenght = len(removeAnoyiing) #4
-for j in removeAnoyiing:
-    for palabras in j:
-        if palabras in twoDicts["causativos"]:
+for j in range(len(organize)):
+    separador = organize[j].split(' ')
+    opositivos = 0
+    causativos = 0
+    for i in range(len(separador)-1): 
+        algoritmo = separador[i]+" "+separador[i+1]
+        if algoritmo in twoDicts['opositivos']:
+            opositivos += 1
+        elif algoritmo in twoDicts['causativos']:
             causativos += 1
-        elif palabras in twoDicts["opositivos"]:
-            opositivos +=   1
-#Me doy cuenta que la embarre con la division porque era se separar en frases grandes            
-print("Fin")
-#Por cada fila tenemos que llenar ciertos parametros
+    print(f'Opositivos{opositivos} Causativos {causativos}')
 
-#print("sin embargo" in twoDicts["causativos"]) #Identify seek
+
+
 

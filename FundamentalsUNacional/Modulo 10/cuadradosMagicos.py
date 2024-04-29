@@ -13,20 +13,15 @@ Caso 1
 """
 matrix = []
 for i in range(RequestNum):#entrada de la matrix
+    
     for j in range(5):
+        
         requestInput = input()
-        matrix.append(requestInput)
-#modificación de la matrix
-editList = matrix.pop(0) #Remueve el caso uno que no sirve para nada
-
-matrixInt = []
-for i in matrix:
-    listMatrixInterna = []
-    splitStr = i.split(' ')
-    for j in splitStr:
-        if j == '':
+        if j == 0:
             continue
         else:
-            listMatrixInterna.append(int(j))
-    matrixInt.append(listMatrixInterna)
-print(matrixInt)
+            splitStr = requestInput.split(' ',3)
+            matrixInterna = []
+            for stringsitos in splitStr:   
+                matrixInterna.append(int(stringsitos))
+            matrix.append(matrixInterna)
